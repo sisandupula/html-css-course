@@ -9,32 +9,62 @@
 </head>
 <body class="page__body">
     <header class="header">
-        <div class="header__item menu">
-            <img class="menu__icon" src="./images/burger.svg" alt="Menu icon">
-        </div>
-        <div class="header__item logo">
-            <img class="logo__icon" src="./images/Group.svg" alt="Group icon" />
-        </div>
-        <div class="header__item devider"></div>
-        <div class="header__item preferences">
-            <img class="preference__icon" src="./images/repair.svg" alt="Repair icon" />
-        </div>
-        <div class="header__item search">
-            <img src="./images/checkstatus.svg" alt="Search icon" />
-        </div>
+        <div class="menu header__item">
+            <img class="menu__icon" src="./images/burger.svg" alt="Menu icon"></div>
+        <div class="logo header__item">
+            <img class="logo__icon" src="./images/Group.svg" alt="Group icon" /></div>
+        <div class="devider header__item"></div>
+        <div class="medium-resolution">
+            <div class="call header__item">
+                <img class="call__icon" src="./images/call.svg" alt="Call" /></div>
+            <div class="chat header__item">
+                <img class="chat__icon" src="./images/chat.svg" alt="Chat" />
+            </div>
+            <div class="profile header__item">
+                <img class="profile__icon" src="./images/profile.svg" alt="Profile" />
+            </div>    
+        </div>    
+        <div class="preferences header__item">
+            <img class="preference__icon" src="./images/repair.svg" alt="Repair icon" /></div>
+        <div class="search header__item">
+            <img src="./images/checkstatus.svg" alt="Search icon" /></div>
     </header>
     <main class="main">
-        <div class="title">
+        <div class="title main__item">
             <h1 class="title__service">Услуги и сервисы</h1>
         </div>
-        <div class="menu">
-            <section>
-                <span class="menu__item">Ремонтируемые устройства</span>
-                <span class="menu__item"></span>
-                <span class="menu__item"></span>
-                <span class="menu__item"></span>
-                <span class="menu__item"></span>
+        <div class="menu main__item">
+            <section class="menu__list">
+                <span class="menu__item menu__item--active--true">Ремонтируемые устройства</span>
+                <span class="menu__item">Ремонтируемые бренды</span>
+                <span class="menu__item">Дополнительные услуги</span>
+                <span class="menu__item">Цены на услуги</span>
+                <span class="menu__item">Специальные цены</span>
+                <span class="menu__item">Отзывы</span>
             </section>
+        </div>
+        <div class="text main__item">
+            <section class="text__container">
+                <article class="paragraph">
+                    <p class="paragraph__content">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    </p>
+                </article>
+            </section>
+        </div>
+        <div class="read-more main__item">
+            <section class="read-more__container">   
+                <div class="read-more__icon">
+                    <img class="read-more__icon--expand" src="./images/expand.svg" alt="Expand" /></div>
+                <div class="read-more__link">
+                    <link><strong></strong></link></div>
+            </section>
+        </div>
+        <div class="image main__item">
+            <figure class="image__containter">
+                <img alt="Service picture here" src="./images/picture.png" class="image__content">
+                
+            </figure>
         </div>
     </main>
 </body>
