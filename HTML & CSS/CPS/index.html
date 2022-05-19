@@ -9,29 +9,52 @@
 </head>
 <body class="page__body">
     <header class="header">
-        <div class="menu header__item">
-            <img class="menu__icon" src="./images/burger.svg" alt="Menu icon"></div>
-        <div class="logo header__item">
-            <img class="logo__icon" src="./images/Group.svg" alt="Group icon" /></div>
-        <div class="devider header__item"></div>
-        <div class="medium-resolution">
-            <div class="call header__item">
-                <img class="call__icon" src="./images/call.svg" alt="Call" /></div>
-            <div class="chat header__item">
-                <img class="chat__icon" src="./images/chat.svg" alt="Chat" />
-            </div>
-            <div class="profile header__item">
-                <img class="profile__icon" src="./images/profile.svg" alt="Profile" />
+        <div class="header__sub-container-1">
+            <div class="menu header__item">
+                <img class="menu__icon" src="./images/burger.svg" alt="Menu icon"></div>
+            <div class="logo header__item">
+                <img class="logo__icon" src="./images/Group.svg" alt="Group icon" /></div>
+        <div class="devider devider-1 header__item"></div>
+
+        </div>
+        <div class="header__sub-container-2">
+            <div class="medium-resolution">
+                <div class="call header__item">
+                    <img class="call__icon" src="./images/call.svg" alt="Call" /></div>
+                <div class="chat header__item">
+                    <img class="chat__icon" src="./images/chat.svg" alt="Chat" />
+                </div>
+                <div class="profile header__item">
+                    <img class="profile__icon" src="./images/profile.svg" alt="Profile" />
+                </div>
+        <div class="devider devider-2 header__item"></div>
+
             </div>    
-        </div>    
-        <div class="preferences header__item">
-            <img class="preference__icon" src="./images/repair.svg" alt="Repair icon" /></div>
-        <div class="search header__item">
-            <img src="./images/checkstatus.svg" alt="Search icon" /></div>
+            <div class="preferences header__item">
+                <img class="preference__icon" src="./images/repair.svg" alt="Repair icon" /></div>
+            <div class="search header__item">
+                <img src="./images/checkstatus.svg" alt="Search icon" /></div>
+        </div>
+
     </header>
     <main class="main">
         <div class="title main__item">
-            <h1 class="title__service">Услуги и сервисы</h1>
+            <div class="title__main">
+                <h1 class="title__service">Услуги и сервисы</h1>
+
+            </div>
+            <div class="title__maxsize">
+                <div class="maxsize__item request-status">
+                    <img class="preference__icon" src="./images/repair.svg" alt="Repair icon" />
+                    <span class="info"><strong>Оставить заявку</strong></span>
+                </div>
+                <div class="maxsize__item repair-status">
+                    <img class="search__icon"src="./images/checkstatus.svg" alt="Search icon" />
+                    <span class="info"><strong>Статус ремонта</strong></span>
+                </div>
+
+            </div>
+            
         </div>
         <div class="menu main__item">
             <section class="menu__list">
@@ -43,29 +66,37 @@
                 <span class="menu__item">Отзывы</span>
             </section>
         </div>
-        <div class="text main__item">
-            <section class="text__container">
-                <article class="paragraph">
-                    <p class="paragraph__content">
-                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    </p>
-                </article>
-            </section>
+        <div class="content-container-1">
+            <div class="content-info">
+                <div class="text main__item">
+                    <section class="text__container">
+                        <article class="paragraph">
+                            <p class="paragraph__content">
+                                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                            </p>
+                            <p class="paragraph__content paragraph__content--visible-on">
+                                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                            </p>
+                        </article>
+                    </section>
+                </div>
+                <div class="read-more main__item">
+                    <section class="read-more__container">   
+                        <div class="read-more__icon">
+                            <img class="read-more__icon--expand" src="./images/expand.svg" alt="Expand" /></div>
+                        <div class="read-more__link">
+                            <link><strong>Читать далее</strong></link></div>
+                    </section>
+                </div>
+            </div>
+           
+            <div class="image main__item">
+                <figure class="image__containter">
+                    <img alt="Service picture here" src="./images/picture.png" class="image__content">
+                </figure>
+            </div>
         </div>
-        <div class="read-more main__item">
-            <section class="read-more__container">   
-                <div class="read-more__icon">
-                    <img class="read-more__icon--expand" src="./images/expand.svg" alt="Expand" /></div>
-                <div class="read-more__link">
-                    <link><strong></strong></link></div>
-            </section>
-        </div>
-        <div class="image main__item">
-            <figure class="image__containter">
-                <img alt="Service picture here" src="./images/picture.png" class="image__content">
-                
-            </figure>
-        </div>
+        
     </main>
 </body>
 </html>
