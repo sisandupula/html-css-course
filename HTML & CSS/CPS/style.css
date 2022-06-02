@@ -25,7 +25,15 @@
     margin: 0;
     display: flex;
 }
-                    
+.body{
+    margin: 0;
+}      
+.body__container{
+    display: flex;
+}
+.page__body{
+    width: 80%;
+}
 
 
 
@@ -96,7 +104,12 @@
 .title__main::before{
     position: relative;
     right: 16px;
-    content: url(./images/highlight.svg)
+    content: '';
+    display: block;
+    background-color: #41F6D7;
+    width: 4px;
+    height: 40px;
+    border-radius: 0 3px 3px 0;
 }
 .menu__list{
     display: flex;
@@ -107,6 +120,7 @@
     width: 0;
 }
 .menu__item{
+    text-decoration: none;
     color: #7E7E82;
     padding: 9px;
     border-radius: 6px;
@@ -115,7 +129,7 @@
     flex-wrap: nowrap;
     line-height: 24px;
 }
-.menu__item--active--true{
+.menu__item--active{
     border: 2px solid #B8FFEC;
     background-color: #FFFFFF;
 
@@ -125,7 +139,9 @@
     flex-direction: row;
 }
 .read-more__link{
-    margin-left: 16px;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
     font-weight: 500;
 }
 .image__containter{
@@ -150,7 +166,7 @@
     margin-bottom: 0;
 }
 
-@media screen and (max-width:470px) {
+@media screen and (max-width:calc(470px + 320px)) {
     .title .title__maxsize{
         display: none;
     }
@@ -190,7 +206,7 @@
         margin-right: 0;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: calc(768px + 320px)){
     .title .title__maxsize{
         display: none;
     }
@@ -247,13 +263,13 @@
    }
     
 }   
-@media screen and (max-width: 468px){
+@media screen and (max-width: calc(468px + 320px)){
     .medium-resolution{
         display: none;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: calc(768px + 320px)) {
     .main{
         width: 98%;
     }
@@ -311,4 +327,39 @@
     .paragraph__content--visible-on:after{
         content: ', что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.';
     }
-}   
+}  
+
+.info{
+    text-decoration: none;
+    color:black;
+}
+/* .request-status__link:after,
+.repair-status__link:after{
+    display : inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #FF3E79;
+}
+.request-status__link:after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content : url(./images/group.svg);
+}
+.repair-status__link:after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content : url(./images/checkstatus.svg)
+}
+.request-status__link,
+.repair-status__link{
+    display: flex;
+    align-items: center;
+} */
+.aside{
+    width: 20%;
+    display: inline-block;
+    min-width: 320px;
+}
