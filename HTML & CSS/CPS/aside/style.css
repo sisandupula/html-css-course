@@ -16,7 +16,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@keyframes myAnim {
+/* @keyframes myAnim {
 	0% {
 		transform: scale(1);
 	}
@@ -28,18 +28,19 @@
 	100% {
 		transform: scale(1);
 	}
-}
+} */
 @keyframes showLogo {
     0% {opacity: 0};
     100%{opacity: 1}
 }
 
-* > button{
+* > a{
     border: 0;
     padding: 0;
     font-family: "TT Lakes";
     font-size: 16px;
     background-color: inherit;
+    cursor: pointer;
 }
 .page {
     font-family: 'TT Lakes';
@@ -48,15 +49,17 @@
     font-size: 16px;
 }
 .body{
-    height: 100%;
+    height: 100vh;
     margin: 0;
 }
 .body__container{
     height: 100%;
 }
 .aside{
-    height: 100%;
-    display: inline-block;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
     min-width: 320px;
 }
 .aside__header{
@@ -88,20 +91,24 @@
 .aside__list{
     z-index: 1;
 }
-.aside__list .title::before{
+.aside__list .list-item-active::before{
     position: relative;
+    left: -24px;
+    top:8px;
     content: '';
-    display: block;
+    display: inline-block;
     background-color: #41F6D7;
     width: 4px;
     height: 32px;
     border-radius: 0 3px 3px 0;
-    margin-right: 20px;
 }
 .list-item{
     display: block;
-    margin: 32px 24px;
+    padding: 16px 24px;
     color: #1B1C21;
+}
+.list-item-active{
+    color: #7E7E82;
 }
 .list-item:hover{
     filter:sepia(10%);
@@ -110,10 +117,12 @@
 }
 .aside__main{
     display: flex;
+    flex-grow:1;
     flex-direction: column;
     justify-content: space-between;
 }
 .logos{
+    display: flex;
     margin: 0 0 16px 24px;
 }
 .logos__item{
@@ -123,7 +132,7 @@
     margin-left: 24px;
 }
 .aside__footer{
-    transform: translate(0px, calc(100vh - 743px));
+    margin-top: auto;
     background-color: #FFFFFF;
     z-index: 2;
 }
@@ -142,6 +151,33 @@
 .languages{
     margin-bottom: 32px;
 }
+.left-side .icon{
+    margin-right: 15px;
+}
 .logo-icon{
     animation: showLogo 1s ease 0s  normal forwards;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 100%;
+}
+.icon__close{
+    content: url(../images/icon-close.svg);
+}
+.icon__search{
+    content : url(../images/icon-search.svg)
+}
+.icon__call{
+    content: url(../images/icon-call.svg)
+}
+.icon__chat{
+    content: url(../images/icon-chat.svg)
+}
+.icon__contacts{
+    content: url(../images/icon-contacts.svg)
 }
