@@ -113,7 +113,8 @@
 .list-item:hover{
     filter:sepia(10%);
     color: #FF3E79;
-    animation: myAnim 0.7s linear 0s 1 normal forwards;
+    /* animation: myAnim 0.7s linear 0s 1 normal forwards; */
+    transform: scale(1.05)
 }
 .aside__main{
     display: flex;
@@ -136,7 +137,7 @@
     background-color: #FFFFFF;
     z-index: 2;
 }
-.contacts{
+.contacts .phone__link{
     font-family: 'TT Lakes Bold';
 }
 .languages__item-active{
@@ -166,6 +167,12 @@
     background-color: #FF3E79;
     border-radius: 100%;
 }
+.logo:hover{
+    cursor:pointer;
+}
+.icon:hover{
+    cursor: pointer;
+}
 .icon__close{
     content: url(../images/icon-close.svg);
 }
@@ -180,4 +187,8 @@
 }
 .icon__contacts{
     content: url(../images/icon-contacts.svg)
+}
+.mail__link, .phone__link{
+    text-decoration: none;
+    color: inherit;
 }

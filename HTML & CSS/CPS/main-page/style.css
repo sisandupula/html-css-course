@@ -18,7 +18,7 @@
     }
 .page {
     font-family: 'TT Lakes';
-    width: 100%;
+    width: 100vw;
     font-size: 16px;
 }
 .page__body{
@@ -26,13 +26,15 @@
     display: flex;
 }
 .body{
+    height: 100vh;
     margin: 0;
 }      
 .body__container{
+    height:100%;
     display: flex;
 }
 .page__body{
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -56,6 +58,9 @@
 .header__sub-container-2{
     display: flex;
     align-items: center;
+}
+.header__sub-container-1{
+    margin-left: 16px;
 }
 
 .header__item{
