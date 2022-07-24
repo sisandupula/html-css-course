@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const brands = document.querySelectorAll('.brands__item') 
     const showMore = document.querySelector('.show-more')

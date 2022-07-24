@@ -107,3 +107,55 @@ button:hover{
         display: none;
     }
 }
+@media screen and (max-width : 500px){
+    .services__header{
+        display: flex;
+        align-items: center;
+        height : 64px;
+        padding: 16px;
+    }
+    .brands, .read-more{
+        display: none;
+    }
+}
+@media screen and (min-width : 500px){
+    .swiper {
+        display: none;
+    }
+}
+
+
+
+                                /* SWIPER JS */
+.swiper {
+    width: 100%;
+    height: 120px;
+    margin: 0 !important;
+}
+
+.swiper-slide {
+    width: 75% !important;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide{
+    background-color: inherit !important;
+}
+.swiper-pagination{
+    bottom : 0 !important;
+}
