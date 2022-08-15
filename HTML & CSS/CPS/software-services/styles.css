@@ -132,7 +132,6 @@ button:hover{
     height: 120px;
     margin: 0 !important;
 }
-
 .swiper-slide {
     width: 75% !important;
     text-align: center;
@@ -158,4 +157,10 @@ button:hover{
 }
 .swiper-pagination{
     bottom : 0 !important;
+}
+.swiper-pagination-bullet{
+    background-color: #c9c0c0 !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #B5B6BC !important;
 }

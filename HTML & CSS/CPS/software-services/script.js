@@ -1,5 +1,19 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+    if(window.innerWidth < 501){
+        new Swiper('.swiper', {
+            mousewheel: {
+                invert: true,
+                sensitivity: 2
+            },
+            spaceBetween: -10,
+            slidesPerView: "auto",
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true
+            }
+        })
+    }
     const brands = document.querySelectorAll('.brands__item') 
     const showMore = document.querySelector('.show-more')
 
